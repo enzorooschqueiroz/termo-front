@@ -65,7 +65,7 @@ export default function TermoGame() {
     } else if (novasTentativas.length >= 6) {
       setStatus('finished');
       clearInterval(timerRef.current);
-      setMensagem(`Você perdeu! A palavra era "${palavra}".`);
+      setMensagem(`Você perdeu!`);
     }
   }
 
@@ -161,7 +161,6 @@ export default function TermoGame() {
               <button className="btn" onClick={registrarResultado}>Registrar resultado</button>
             </>
           )}
-          <button className="btn" onClick={() => setStatus('waiting')}>Jogar de novo</button>
         </>
       )}
 
