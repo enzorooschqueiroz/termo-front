@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-const API_BASE = 'http://52.67.222.76:5003';
+const API_BASE = 'https://147d-52-67-222-76.ngrok-free.app';
+
 
 export default function TermoGame() {
   const [palavra, setPalavra] = useState('');
